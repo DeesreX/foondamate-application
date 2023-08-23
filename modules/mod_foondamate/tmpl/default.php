@@ -10,8 +10,6 @@ $param = $params->get('param_name');
 		<input type="submit" value="Solve">
 	</form>
 <?php
-if (isset($result)) {
-	print_r( "<pre>$result</pre>");
-}
+print_r($list);
 
 ?>
