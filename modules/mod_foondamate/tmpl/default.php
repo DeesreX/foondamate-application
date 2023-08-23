@@ -7,7 +7,7 @@ $param = $params->get('param_name');
 
 <?php
 foreach ($list as $step){
-    echo $step;
+    echo $step . "<br>";
 }
 
 ?>
