@@ -11,7 +11,7 @@ $param = $params->get('param_name');
 	</form>
 <?php
 if (isset($result)) {
-	echo "<pre>$result</pre>";
+	print_r( "<pre>$result</pre>");
 }
 
 ?>
