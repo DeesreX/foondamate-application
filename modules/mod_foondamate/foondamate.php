@@ -16,6 +16,6 @@ use Joomla\Module\Banners\Site\Helper\BannersHelper;
 
 \Rex\Module\Foondamate\Site\Helper\FoondamateHelper::getList();
 $model = $app->bootComponent('com_banners')->getMVCFactory()->createModel('Banners', 'Site', ['ignore_request' => true]);
-$list  = BannersHelper::getList($params, $model, $app);
+$list  = \Rex\Module\Foondamate\Site\Helper\FoondamateHelper::getList($params, $model, $app);
 
 require ModuleHelper::getLayoutPath('mod_foondamate', $params->get('layout', 'default'));

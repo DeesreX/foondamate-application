@@ -5,6 +5,6 @@ defined('_JEXEC') or die;
 $param = $params->get('param_name');
 ?>
 
-<div class="mymodule">
+<div class="foondamate">
    hiiii?
 </div>
