@@ -11,8 +11,6 @@
 namespace Rex\Module\Foondamate\Site\Helper;
 
 use Joomla\CMS\Application\CMSApplication;
-use Joomla\CMS\Component\ComponentHelper;
-use Joomla\CMS\Environment\Browser;
 use Joomla\Component\Banners\Site\Model\BannersModel;
 use Joomla\Registry\Registry;
 
