@@ -1,5 +1,7 @@
 <?php
 
+namespace Rex\Test\usePHPUnit\Framework\TestCase;
+
 use PHPUnit\Framework\TestCase;
 use Rex\Module\Foondamate\Site\Helper\FoondamateHelper;
 
