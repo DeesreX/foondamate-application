@@ -10,6 +10,9 @@ $param = $params->get('param_name');
 		<input type="submit" value="Solve">
 	</form>
 <?php
-print_r($list);
+
+foreach ($list as $equation){
+	echo $equation . "<br>";
+}
 
 ?>
