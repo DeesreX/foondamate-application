@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Helper\ModuleHelper;
 
-\Rex\Module\Foondamate\Site\Helper\FoondamateHelper::getList();
+//\Rex\Module\Foondamate\Site\Helper\FoondamateHelper::getList();
 //$list  = \Rex\Module\Foondamate\Site\Helper\FoondamateHelper::getList($params, $model, $app);
 
 require ModuleHelper::getLayoutPath('mod_foondamate', $params->get('layout', 'default'));
