@@ -12,8 +12,7 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Helper\ModuleHelper;
 
-//$list  = \Rex\Module\Foondamate\Site\Helper\FoondamateHelper::getList($params, $model, $app);
+$list  = \Rex\Module\Foondamate\Site\Helper\FoondamateHelper::getList();
 $rexHelper = new \Rex\Module\Foondamate\Site\Helper\FoondamateHelper();
-$list = $rexHelper::solveEquation('7x - 2 = 21');
 
 require ModuleHelper::getLayoutPath('mod_foondamate', $params->get('layout', 'default'));

@@ -34,9 +34,9 @@ class FoondamateHelper
      *
      * @return  mixed
      */
-    public static function getList(Registry $params, BannersModel $model, CMSApplication $app)
+    public static function getList($equation)
     {
-        return self::solveEquation("10x - 2 = 15");
+        return self::solveEquation($equation);
     }
     public static function solveEquation($equation)
     {
