@@ -17,7 +17,7 @@ $param = $params->get('param_name');
 
 foreach ($list as $equation):
 	?>
-	<div class="card">
+	<div class="card" style="padding: 20px; margin: 10px;">
 		<?php echo $equation . "<br>"; ?>
 	</div>
 <?php endforeach;?>
