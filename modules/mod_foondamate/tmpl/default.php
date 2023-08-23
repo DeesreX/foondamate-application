@@ -6,5 +6,5 @@ $param = $params->get('param_name');
 ?>
 
 <div class="mymodule">
-    <!-- Your module content here -->
+   hiiii?
 </div>
