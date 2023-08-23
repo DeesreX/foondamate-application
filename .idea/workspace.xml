@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b0bf87-8974-45f1-a215-4bb65a14413a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/modules/mod_foondamate/tests/FoondamateHelperTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mod_foondamate/tmpl/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mod_foondamate/tmpl/default.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,17 @@
       <recent name="$PROJECT_DIR$/modules/mod_foondamate/src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="FoondamateHelperTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="FoondamateHelperTest" file="$PROJECT_DIR$/modules/mod_foondamate/tests/FoondamateHelperTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.FoondamateHelperTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1692776881150</updated>
       <workItem from="1692776882354" duration="8147000" />
-      <workItem from="1692788462730" duration="4084000" />
+      <workItem from="1692788462730" duration="4426000" />
     </task>
     <servers />
   </component>
