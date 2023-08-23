@@ -5,4 +5,4 @@ defined('_JEXEC') or die;
 $param = $params->get('param_name');
 ?>
 
-hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+<?php echo $list?>
