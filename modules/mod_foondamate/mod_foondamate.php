@@ -31,7 +31,6 @@ $equations = [
     "5 - x = 3x + 2"
 ];
 
-$list  = $result;
 $rexHelper = new \Rex\Module\Foondamate\Site\Helper\FoondamateHelper();
 
 require ModuleHelper::getLayoutPath('mod_foondamate', $params->get('layout', 'default'));

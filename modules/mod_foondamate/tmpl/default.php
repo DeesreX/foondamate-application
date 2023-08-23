@@ -10,8 +10,8 @@ $param = $params->get('param_name');
 		<input type="submit" value="Solve">
 	</form>
 <?php
-foreach ($list as $step){
-    echo $step . "<br>";
+if (isset($result)) {
+	echo "<pre>$result</pre>";
 }
 
 ?>
