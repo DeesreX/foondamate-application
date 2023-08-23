@@ -63,14 +63,16 @@ class FoondamateHelper
         $a -= $c;
         $b -= $d;
 
+        $steps = [];
+
         // Displaying the steps
-        $steps = "Given equation: {$a}x + {$b} = 0\n";
-        $steps .= "Step 1: Add " . (-$b) . " to both sides\n";
+        $steps[0] = "Given equation: {$a}x + {$b} = 0\n";
+        $steps[1] .= "Step 1: Add " . (-$b) . " to both sides\n";
         $c = -$b;
-        $steps .= "Step 2: {$a}x = {$c}\n";
-        $steps .= "Step 3: Divide both sides by {$a}\n";
+        $steps[2] .= "Step 2: {$a}x = {$c}\n";
+        $steps[3] .= "Step 3: Divide both sides by {$a}\n";
         $x = $c / $a;
-        $steps .= "Solution: x = {$x}\n";
+        $steps[4] .= "Solution: x = {$x}\n";
 
         return $steps;
     }

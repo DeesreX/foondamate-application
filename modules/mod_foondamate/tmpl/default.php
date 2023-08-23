@@ -5,4 +5,9 @@ defined('_JEXEC') or die;
 $param = $params->get('param_name');
 ?>
 
-<?php echo $list?>
+<?php
+foreach ($list as $step){
+    echo $step;
+}
+
+?>
