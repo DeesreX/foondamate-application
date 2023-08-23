@@ -1,0 +1,15 @@
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>MOD_FOONDAMATE</name>
+    <author>DeesreX</author>
+    <version>1.0.0</version>
+    <description>MOD_MYMODULE_DESCRIPTION</description>
+    <files>
+        <filename module="mymodule">mymodule.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+        <!-- Add parameters here -->
+    </config>
+</extension>
