@@ -3,6 +3,7 @@
     <author>DeesreX</author>
     <version>1.0.0</version>
     <description>MOD_MYMODULE_DESCRIPTION</description>
+    <namespace path="src">Rex\Module\Foondamate</namespace>
     <files>
         <filename module="mod_foondamate">mod_foondamate.php</filename>
         <folder>src</folder>
