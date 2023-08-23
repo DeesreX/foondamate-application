@@ -15,10 +15,10 @@ $param = $params->get('param_name');
 <div class="container">
 <?php
 
-foreach ($list as $equation){
-	echo $equation . "<br>";
-}
-
-?>
-
+foreach ($list as $equation):
+	?>
+	<div class="card">
+		<?php echo $equation . "<br>"; ?>
+	</div>
+<?php endforeach;?>
 </div>
