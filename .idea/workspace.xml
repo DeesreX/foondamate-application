@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b0bf87-8974-45f1-a215-4bb65a14413a" name="Changes" comment="" />
+    <list default="true" id="53b0bf87-8974-45f1-a215-4bb65a14413a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mod_foondamate/mod_foondamate.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mod_foondamate/mod_foondamate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mod_foondamate/tmpl/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mod_foondamate/tmpl/default.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +17,15 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="SCHEME" value="Project" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JoomlaConfiguration" enabled="true">
+    <joomlaConfigPath>$PROJECT_DIR$/configuration.php</joomlaConfigPath>
+    <joomlaPath>$PROJECT_DIR$</joomlaPath>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
   <component name="ProjectId" id="2UNP5XWG1Ae0rvvFRU2IdoRLFIY" />
@@ -27,6 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/deesrex/PhpstormProjects/foondamate-application/configuration.php",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,7 +60,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692776881150</updated>
-      <workItem from="1692776882354" duration="8103000" />
+      <workItem from="1692776882354" duration="8147000" />
+      <workItem from="1692788462730" duration="3242000" />
     </task>
     <servers />
   </component>

@@ -12,6 +12,12 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Helper\ModuleHelper;
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['equation'])) {
+	$equation = $_POST['equation'];
+	$result = Rex\Module\Foondamate\Site\Helper\FoondamateHelper::solveEquation($equation);
+	// You can now use $result to display the solution.
+}
+
 $equations = [
     "5x + 3 = 2x - 7",
     "3x - 4 = 11",
@@ -25,7 +31,7 @@ $equations = [
     "5 - x = 3x + 2"
 ];
 
-$list  = \Rex\Module\Foondamate\Site\Helper\FoondamateHelper::getList($equations[4]);
+$list  = $result;
 $rexHelper = new \Rex\Module\Foondamate\Site\Helper\FoondamateHelper();
 
 require ModuleHelper::getLayoutPath('mod_foondamate', $params->get('layout', 'default'));
