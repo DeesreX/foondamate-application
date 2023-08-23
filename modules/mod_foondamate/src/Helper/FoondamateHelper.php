@@ -38,6 +38,34 @@ class FoondamateHelper
      */
     public static function getList(Registry $params, BannersModel $model, CMSApplication $app)
     {
-        return "HI";
+        return self::solveEquation("7x - 2 = 21");
     }
+    public static function solveEquation($equation)
+    {
+        // Splitting the equation into left and right parts
+        list($left, $right) = explode('=', $equation);
+        $left = trim($left);
+        $right = trim($right);
+
+        // Finding the coefficient of x and the constant term
+        preg_match('/([-]?[0-9]*\.?[0-9]+)x/', $left, $matches);
+        $a = floatval($matches[1]);
+
+        preg_match('/([-+]?[0-9]*\.?[0-9]+)$/', $left, $matches);
+        $b = floatval($matches[0]);
+
+        $c = floatval($right);
+
+        // Displaying the steps
+        $steps = "Given equation: {$a}x {$b} = {$c}\n";
+        $steps .= "Step 1: Add " . (-$b) . " to both sides\n";
+        $c += $b;
+        $steps .= "Step 2: {$a}x = {$c}\n";
+        $steps .= "Step 3: Divide both sides by {$a}\n";
+        $x = $c / $a;
+        $steps .= "Solution: x = {$x}\n";
+
+        return $steps;
+    }
+
 }
