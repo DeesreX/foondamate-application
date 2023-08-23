@@ -45,19 +45,28 @@ class FoondamateHelper
         $left = trim($left);
         $right = trim($right);
 
-        // Finding the coefficient of x and the constant term
-        preg_match('/([-]?[0-9]*\.?[0-9]+)x/', $left, $matches);
-        $a = floatval($matches[1]);
+        // Finding the coefficient of x and the constant term on the left side
+        preg_match('/([-]?[0-9]*\.?[0-9]+)?x/', $left, $matches);
+        $a = isset($matches[1]) ? floatval($matches[1]) : 0;
 
         preg_match('/([-+]?[0-9]*\.?[0-9]+)$/', $left, $matches);
-        $b = floatval($matches[0]);
+        $b = isset($matches[0]) ? floatval($matches[0]) : 0;
 
-        $c = floatval($right);
+        // Finding the coefficient of x and the constant term on the right side
+        preg_match('/([-]?[0-9]*\.?[0-9]+)?x/', $right, $matches);
+        $c = isset($matches[1]) ? floatval($matches[1]) : 0;
+
+        preg_match('/([-+]?[0-9]*\.?[0-9]+)$/', $right, $matches);
+        $d = isset($matches[0]) ? floatval($matches[0]) : 0;
+
+        // Simplifying the equation to the form of ax + b = 0
+        $a -= $c;
+        $b -= $d;
 
         // Displaying the steps
-        $steps = "Given equation: {$a}x {$b} = {$c}\n";
+        $steps = "Given equation: {$a}x + {$b} = 0\n";
         $steps .= "Step 1: Add " . (-$b) . " to both sides\n";
-        $c += $b;
+        $c = -$b;
         $steps .= "Step 2: {$a}x = {$c}\n";
         $steps .= "Step 3: Divide both sides by {$a}\n";
         $x = $c / $a;
@@ -65,5 +74,6 @@ class FoondamateHelper
 
         return $steps;
     }
+
 
 }
