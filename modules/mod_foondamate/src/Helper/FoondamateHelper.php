@@ -36,7 +36,7 @@ class FoondamateHelper
      */
     public static function getList(Registry $params, BannersModel $model, CMSApplication $app)
     {
-        return self::solveEquation("7x - 2 = 21");
+        return self::solveEquation("10x - 2 = 15");
     }
     public static function solveEquation($equation)
     {
